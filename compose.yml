@@ -6,13 +6,6 @@ services:
     container_name: nuxt-app
     volumes:
       - ./:/web
-      - /web/node_modules
       - /web/.output
     ports:
       - "3000:3000"
-    networks:
-      - nuxt-network
-
-networks:
-  nuxt-network:
-    driver: bridge
